@@ -66,7 +66,7 @@ public class CassandraConfigTest
         };
 
         Response response = resource.getSeeds();
-        assertEquals(500, response.getStatus());
+        assertEquals(200, response.getStatus());
     }
 
     @Test
