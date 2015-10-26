@@ -91,9 +91,11 @@ public class SystemUtils
         {
             dirFile.delete();
             dirFile.mkdirs();
+            dirFile.setWritable(true, false);
         }
         else if (!dirFile.exists())
             dirFile.mkdirs();
+            dirFile.setWritable(true, false);
     }
 
     public static byte[] md5(byte[] buf)
