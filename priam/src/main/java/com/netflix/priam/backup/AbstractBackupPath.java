@@ -155,6 +155,7 @@ public abstract class AbstractBackupPath implements Comparable<AbstractBackupPat
         File parent = new File(return_.getParent());
         if (!parent.exists())
             parent.mkdirs();
+            parent.setWritable(true, false);
         return return_;
     }
 
